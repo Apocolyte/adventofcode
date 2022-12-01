@@ -1,7 +1,5 @@
 import os
 
-# elves want to know who has the most calories and how much they carry
-
 abspath = os.path.abspath(__file__)
 dname = os.path.dirname(abspath)
 os.chdir(dname)
@@ -22,7 +20,7 @@ for single_calories in data:
         elf_calories += int(single_calories)
 
 # part 1 answer
-# print(max(all_elves_calories))
+print(max(all_elves_calories))
 
 # part 2
 top_3_elves = []
