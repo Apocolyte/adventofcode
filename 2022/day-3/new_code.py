@@ -21,7 +21,6 @@ class Code:
             grouped_rucksacks.append([Code.data[i], Code.data[i+1], Code.data[i+2]])
 
         all_values = []
-        all_elves_char = ""
         for group in grouped_rucksacks:
             all_elves_char = list(set(group[0]).intersection(group[1], group[2]))[0]
              
