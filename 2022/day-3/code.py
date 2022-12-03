@@ -46,3 +46,6 @@ for group in grouped_backpacks:
 # part 2
 print(sum(all_values))
 
+# Possible improvements:
+# - Use set intesections instead of for loops (since only uniqueness is needed, not index)
+# - While loop instead of modulo for assigning groups
