@@ -9,7 +9,7 @@ class Code:
             first_compartment = rucksack[:len(rucksack) // 2]
             second_compartment = rucksack[len(rucksack) // 2:]
 
-            both_compartments_char = list(set(first_compartment).intersection(second_compartment))[0]
+            both_compartments_char = list(set(first_compartment) & set(second_compartment))[0]
             all_values.append(Code.get_value[both_compartments_char])
 
         return sum(all_values)
@@ -17,7 +17,7 @@ class Code:
     def part2(self):
         all_values = []
         for i in range(0, len(Code.data), 3):
-            all_elves_char = list(set(Code.data[i]).intersection(Code.data[i+1], Code.data[i+2]))[0]
+            all_elves_char = list(set(Code.data[i]) & set(Code.data[i+1]) & set(Code.data[i+2]))[0]
             all_values.append(Code.get_value[all_elves_char])
 
         return sum(all_values)
