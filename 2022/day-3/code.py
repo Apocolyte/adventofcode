@@ -1,11 +1,3 @@
-# rucksack has two compartments
-# items of type need to go in one of the two
-# exactly one item type per rucksack is wrong
-# equal number of items between compartments
-# First half representes compartment 1
-
-# lowercase have priorities 1-26, upper 27-52
-
 data = [f.strip() for f in open("input.txt")]
 get_value = {char: index+1 for index, char in enumerate("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")}
 
