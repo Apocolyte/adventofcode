@@ -44,7 +44,7 @@ for round in data:
     total_score += round_score
 
 # part 1
-# print(total_score)
+print(total_score)
 
 total_score = 0
 for round in data:
