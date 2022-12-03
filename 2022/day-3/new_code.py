@@ -1,4 +1,3 @@
-
 class Code:
     data = [f.strip() for f in open("input.txt")]
     get_value = {char: index+1 for index, char in enumerate("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")}
