@@ -7,12 +7,7 @@
 # lowercase have priorities 1-26, upper 27-52
 
 data = [f.strip() for f in open("input.txt")]
-
-# print(data[0][:int(len(data[0])/2)])
-#print(data[0][int(len(data[0])/2):])
-
 get_value = {char: index+1 for index, char in enumerate("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")}
-
 
 all_values = []
 for backpack in data:
@@ -24,14 +19,11 @@ for backpack in data:
         if char in second_compartment:
             both_compartments_char = char
 
-
-    # print(both_compartments_char)
     all_values.append(get_value[both_compartments_char])
 
 # part 1
 # print(sum(all_values))
 
-# item carried by all 3 is the group
 grouped_backpacks = []
 group = []
 for index, backpack in enumerate(data):
@@ -42,8 +34,6 @@ for index, backpack in enumerate(data):
     else:
         group.append(backpack)
 
-# print(grouped_backpacks)
-
 all_values = []
 all_elves_char = ""
 for group in grouped_backpacks:
@@ -53,5 +43,6 @@ for group in grouped_backpacks:
     
     all_values.append(get_value[all_elves_char])
 
+# part 2
 print(sum(all_values))
 
