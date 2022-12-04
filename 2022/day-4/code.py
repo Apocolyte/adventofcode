@@ -29,3 +29,6 @@ for i in full_ranges:
 
 # part 2
 print(number)
+
+# sets unnecessary in this case, check for lowest and max values instead
+# poor and confusing input parsing
