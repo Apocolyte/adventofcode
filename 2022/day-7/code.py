@@ -66,7 +66,7 @@ for dir_name, dir_data in directory_sizes_total.items():
         total_size += dir_data
 
 # part 1
-# print(total_size)
+print(total_size)
 
 total_disk_space = 70000000
 required_to_remove = 30000000
